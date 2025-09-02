@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.font-noto-serif {
+    font-family: 'Noto Serif', serif;
+}
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.display-flex{
+    display: flex;
+}
+
+.heading{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.paragraph{
+    font-size: 22px;
+   color: #00000080;
+}
+
+.span-text{
+    color: #c95a08;
+}
+.section-gap{
+  margin-top: 60px;
+}
+.list-item{
+  margin-top: 20px;
+}
+
+.flower-container{
+  gap: 60px;
+}
+.badge{
+  width: 286px;
+  height: 286px;
+  position: absolute;
+  top: -100px;
+  right: -90px;
+  filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
+}
+
+.image-container{
+  position: relative;
+}
+
+/* deals */
+.deals-heading{
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.deals-heading p{
+  text-align: center;
+}
+
+.bloom{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/deal-bloom.png")
+}
+.ana{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/deal-ana.png")
+}
+.zabo{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/deal-zabo.png")
+}
+@media screen and (max-width: 768px) {
+  .flower-container{
+    flex-direction: column;
+    
+  }
+  .store-image{
+    width: 100%;
+  }
+  .badge{
+   display: none;
+  }
+  .heading{
+    font-size: 24px;
+  margin: 0;
+  }
+  .br{
+    display: none;
+  }
+  .paragraph{
+    font-size: 14px;
+  }
+  .list-item{
+    margin-top: 16px;
+  }
+  
+}
